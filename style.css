@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lavender;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: mediumpurple;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px; /* Adjust font size as needed */
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#search {
+  width: 500px; /* Adjust width as needed */
+  padding: 0.5rem 1rem;
+  border: 2px solid navyblue;
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: serif;
+  color: black;
+  font-size: 2rem;
+}
+
+.search::placeholder {
+  color: black;
+}
+
+.search:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+button {
+  background-color: navyblue;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 200px;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-info span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.green {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.orange {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.red {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.overview {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+  display: none;
+}
+
+.overview.visible {
+  display: block;
+}
+
+.highlighted {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.highlighted img {
+  width: 30%;
+  cursor: default;
+}
+
+.highlighted .overview {
+  width: 65%;
+  margin-left: 20px;
+  display: block;
+}
+
+.overview h6 {
+  margin-top: 1;
+}
+
+.cast {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.release-date {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.genre {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.language {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.director {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.producer {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.trailer-link {
+  font-size: 14px;
+  color: blue;
+  margin-top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.trailer-link:hover {
+  text-decoration: none;
+}
+
+button.active {
+  background-color: darkblue; /* or any other highlight color */
+  border: 2px solid #fff;
+  color: #fff;
+}
